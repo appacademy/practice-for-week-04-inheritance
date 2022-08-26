@@ -22,6 +22,11 @@ describe("Student class", () => {
       expect(student1.lastName).to.eql("johnson");
     });
 
+    it("should set the age property", () => {
+      expect(student1).to.have.property('age');
+      expect(student1.age).prototype.eql(24)
+    })
+
     it("should set the major property", () => {
       expect(student1).to.have.property("major");
       expect(student1.major).to.eql("software-development");
